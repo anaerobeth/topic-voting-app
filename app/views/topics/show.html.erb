@@ -1,14 +1,11 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <strong>Title:</strong>
-  <%= @topic.title %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @topic.description %>
-</p>
-
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<h2><%= @topic.title %>
+</h2>
+<br />
+<h3><%= @topic.description %>
+</h3>
+<p></p>
+<%= link_to 'Edit', edit_topic_path(@topic) %> &nbsp;&nbsp;|&nbsp;&nbsp;
 <%= link_to 'Back', topics_path %>

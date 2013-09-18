@@ -3,9 +3,10 @@
 
 <h2><%= @topic.title %>
 </h2>
+
+<p><%= @topic.description %>
+</p>
 <br />
-<h3><%= @topic.description %>
-</h3>
-<p></p>
+<br />
 <%= link_to 'Edit', edit_topic_path(@topic) %> &nbsp;&nbsp;|&nbsp;&nbsp;
 <%= link_to 'Back', topics_path %>
